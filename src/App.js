@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import Home from "./components/Pages/Home.js"
 import Portfolio from "./components/Pages/Portfolio.js"
 import Contact from "./components/Pages/Contact.js"
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Header"
 import Footer from "./components/Footer"
 
 function App() {

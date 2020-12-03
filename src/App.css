@@ -49,6 +49,14 @@ main img {
   margin-bottom: 250px
 }
 
+form {
+  width: 100%
+}
+
+footer {
+  padding: 20px;
+}
+
 #footer-row {
   font-size: 28px;
   color: #007fff !important
