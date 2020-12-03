@@ -1,5 +1,4 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap"
 import headshot from "../../resources/images/pic1.jpg"
 
 function homePage() {
