@@ -16,17 +16,25 @@ function NavTabs(props) {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-                <Nav.Link href="#features">Portfolio</Nav.Link>
-                <NavDropdown title="Projects" id="collasible-nav-dropdown">
+                <Nav.Link>
+                    <Link to="/portfolio" className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>
+                        Portfolio
+                    </Link>
+                </Nav.Link>
+                {/* <NavDropdown title="Projects" id="collasible-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Home</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">Portfolio</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.3">Resume</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.4">Contact</NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
                 </Nav>
                 <Nav>
                 <Nav.Link target="_blank" href={Resume}>Resume</Nav.Link>
-                <Nav.Link href="#deets">Contact</Nav.Link>
+                <Nav.Link >
+                    <Link to="/contact" className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}>
+                        Contact
+                    </Link>
+                </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

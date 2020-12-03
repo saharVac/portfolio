@@ -44,3 +44,12 @@ main img {
 #title {
   color: #007fff;
 }
+
+#portfolio {
+  margin-bottom: 250px
+}
+
+#footer-row {
+  font-size: 28px;
+  color: #007fff !important
+}

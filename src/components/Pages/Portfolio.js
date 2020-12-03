@@ -1,9 +1,16 @@
 import React from "react";
+import codeRefractor from "../../resources/images/code-refractor.jpg"
+import aboutMe from "../../resources/images/about-me.jpg"
+import javascriptQuiz from "../../resources/images/javascript-quiz.jpg"
+import workdayScheduler from "../../resources/images/work-day-scheduler.jpg"
+import weatherDashbaord from "../../resources/images/weather-dashboard.jpg"
+import chopCheese from "../../resources/images/chopCheese.jpg"
+import hotDawgR from "../../resources/images/hotDawgr.jpg"
 
 function portfolio() {
 
     return (
-        <main class="container-fluid" style="margin-bottom: 250px">
+        <main id="portfolio" class="container-fluid">
             <div class="row m-0 mt-4">
                 <div class="col-1"></div>
 
@@ -17,8 +24,8 @@ function portfolio() {
                         href="https://saharvac.github.io/code-refractor/"
                         ><img
                         class="card-img-top"
-                        src="images/code-refractor.jpg"
-                        alt="Card image cap"
+                        src={codeRefractor}
+                        alt="Card caption"
                     /></a>
                     <div class="card-body">
                         <p class="card-text">
@@ -42,8 +49,8 @@ function portfolio() {
                         href="https://saharvac.github.io/prework-about-me/"
                         ><img
                         class="card-img-top"
-                        src="images/about-me.jpg"
-                        alt="Card image cap"
+                        src={aboutMe}
+                        alt="Card caption"
                     /></a>
                     <div class="card-body">
                         <p class="card-text">Information About Me</p>
@@ -65,8 +72,8 @@ function portfolio() {
                         href="https://saharvac.github.io/javascript-quiz/"
                         ><img
                         class="card-img-top"
-                        src="images/javascript-quiz.jpg"
-                        alt="Card image cap"
+                        src={javascriptQuiz}
+                        alt="Card caption"
                     /></a>
                     <div class="card-body">
                         <p class="card-text">Timed Quiz</p>
@@ -91,8 +98,8 @@ function portfolio() {
                     >
                         <img
                         class="card-img-top"
-                        src="images/work-day-scheduler.jpg"
-                        alt="Card image cap"
+                        src={workdayScheduler}
+                        alt="Card caption"
                     /></a>
                     <div class="card-body">
                         <p class="card-text">
@@ -118,8 +125,8 @@ function portfolio() {
                         href="https://saharvac.github.io/weather-dashboard/"
                         ><img
                         class="card-img-top"
-                        src="images/weather-dashboard.jpg"
-                        alt="Card image cap"
+                        src={weatherDashbaord}
+                        alt="Card caption"
                     /></a>
                     <div class="card-body">
                         <p class="card-text">Weather Dashboard</p>
@@ -144,8 +151,8 @@ function portfolio() {
                     >
                         <img
                         class="card-img-top"
-                        src="images/chopCheese.jpg"
-                        alt="Card image cap"
+                        src={chopCheese}
+                        alt="Card caption"
                     /></a>
                     <div class="card-body">
                         <p class="card-text">chopCheese</p>
@@ -168,10 +175,10 @@ function portfolio() {
                         target="_blank"
                         href="https://project-two-asika.herokuapp.com/"
                     >
-                        <img
+                    <img
                         class="card-img-top"
-                        src="images/hotDawgr.jpg"
-                        alt="Card image cap"
+                        src={hotDawgR}
+                        alt="Card caption"
                     /></a>
                     <div class="card-body">
                         <p class="card-text">HotDawgr</p>
