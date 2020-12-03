@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap"
+import headshot from "../../resources/images/pic1.jpg"
 
 function homePage() {
 
@@ -14,7 +15,7 @@ function homePage() {
                 <div class="col-2 col-sm-1"></div>
                 <div class="col-10 col-sm-6 col-md-5">
                 <img
-                    src="../../resources/images/pic1.jpg"
+                    src={headshot}
                     alt="headshot"
                     width="200px"
                 />
