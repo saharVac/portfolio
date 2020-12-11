@@ -4,19 +4,17 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import Home from "./components/Pages/Home.js"
 import Portfolio from "./components/Pages/Portfolio.js"
 import Contact from "./components/Pages/Contact.js"
-import Navbar from "./components/Header"
+import Header from "./components/Header"
 import Footer from "./components/Footer"
 
 function App() {
   return (
     <Router>
-      <div>
-        <Navbar />
+        <Header />
         <Route exact path="/" component={Home} />
-        <Route exact path="/portfolio" component={Portfolio} />
+        <Route exact path="/work" component={Portfolio} />
         <Route exact path="/contact" component={Contact} /> 
         <Footer />
-      </div>
     </Router>
   );
 }

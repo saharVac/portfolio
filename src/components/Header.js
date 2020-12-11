@@ -1,44 +1,24 @@
-import React from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap"
-import { Link, useLocation } from "react-router-dom";
-import Resume from "../resources/Resume.pdf"
+import React, { useState } from "react";
+import Navbar from "./Navbar"
 
-function NavTabs(props) {
-    const location = useLocation();
+function Header(props) {
+    
+    const [scrolled, setScrolled] = useState(false)
+
+    // give header a background on scroll
+    document.addEventListener("scroll", () => {
+        if (document.documentElement.scrollTop > 20) {
+            setScrolled(true)
+        } else {
+            setScrolled(false)
+        }
+    })
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand >
-                <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
-                    Sahar Vacnich
-                </Link>
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
-                <Nav.Link>
-                    <Link to="/portfolio" className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>
-                        Portfolio
-                    </Link>
-                </Nav.Link>
-                {/* <NavDropdown title="Projects" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Home</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Portfolio</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Resume</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.4">Contact</NavDropdown.Item>
-                </NavDropdown> */}
-                </Nav>
-                <Nav>
-                <Nav.Link target="_blank" href={Resume}>Resume</Nav.Link>
-                <Nav.Link >
-                    <Link to="/contact" className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}>
-                        Contact
-                    </Link>
-                </Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
+        <header className={scrolled ? "header scrolled" : "header"}>
+            <Navbar />
+        </header>
     )
 }
 
-export default NavTabs
+export default Header

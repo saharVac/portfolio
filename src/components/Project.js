@@ -1,30 +1,40 @@
 import React from "react"
 
-function Project({ title, deployLink, imageSource, description, technologiesUsed, repoLink }) {
+function Project({ title, isDeployed, deployLink, imageSource, description, technologiesUsed, repoLink }) {
 
     return (
-        <div class="card col-10 col-xl-4 mb-4">
-            <h3 class="card-title">{title}</h3>
-            <a
-                target="_blank"
-                href={deployLink}
-                ><img
-                class="card-img-top"
-                src={imageSource}
-                alt="Card caption"
-            /></a>
-            <div class="card-body">
-                <p class="card-text">
+        <div className="card">
+            <div className="card-section card-title">
+                <h4><b>{title}</b></h4>
+            </div>
+            <div className="card-section card-image-section">
+                <img className="card-image" src={imageSource} alt="Card caption" />
+                {
+                    isDeployed ? 
+                    <a target="_blank" rel="noreferrer" href={deployLink}>Link to Deployed App</a> :
+                    ""
+                }
+            </div>
+            <div className="card-section card-description">
+                <p className="card-text">
                     {description}
                 </p>
-    <p class="card-text"><b>Technologies Used: </b>{technologiesUsed}</p>
-                <a
-                href={repoLink}
-                class="btn btn-primary"
-                target="_blank"
-                >Github Repository</a
-                >
             </div>
+            <div className="card-section card-technologies">
+
+                <p className="card-text"><b>Technologies Used: </b>{technologiesUsed}</p>
+            </div>
+            <div className="card-section card-link">
+                <a
+                    href={repoLink}
+                    className="repo-link btn btn-primary"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Github Repository
+                </a>
+            </div>
+            
         </div>
     )
 }

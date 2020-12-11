@@ -3,27 +3,26 @@ import React from "react";
 function Footer() {
     
     return (
-        <footer class="jumbotron jumbotron-fluid fixed-bottom mb-0">
-            <div class="container">
-                <div id="footer-row" class="row">
-                    <div class="col-3 col-sm-3 col-md-4 col-lg-5"></div>
-                    <div class="col-9 col-sm-9 col-md-8 col-lg-7">
+        <footer className="jumbotron jumbotron-fluid fixed-bottom mb-0">
+            <div className="container">
+                <div id="footer-row" className="row">
+                    <div id="footer-title" className="col-9 col-md-8 col-lg-7">
                         Made by Me
                     </div>
-                    <div class="col-3 col-sm-3 col-md-4 col-lg-5"></div>
-                    <div class="col-9 col-sm-9 col-md-8 col-lg-7">
-                        <a target="_blank" href="https://github.com/saharVac">
-                        <i class="fab fa-github-square"></i>
+                    <div id="footer-icons" className="col-9 col-md-8 col-lg-7">
+                        <a target="_blank" rel="noreferrer" href="https://github.com/saharVac">
+                            <i className="fab fa-github-square"></i>
                         </a>
                         <a
-                        class="ml-4"
-                        target="_blank"
-                        href="https://linkedin.com/in/svacnich"
+                            className="ml-4"
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://linkedin.com/in/svacnich"
                         >
-                        <i class="fab fa-linkedin"></i>
+                            <i className="fab fa-linkedin"></i>
                         </a>
-                        <a class="ml-4" href="mailto:vcsahar@gmail.com">
-                        <i class="fas fa-envelope-square"></i>
+                        <a className="ml-4" href="mailto:vcsahar@gmail.com">
+                            <i className="fas fa-envelope-square"></i>
                         </a>
                     </div>
                 </div>
