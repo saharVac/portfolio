@@ -30,7 +30,7 @@ function Navbar() {
             </div>
             <ul className={navLinkOpen ? "navlinks active" : "navlinks"}>
                 <li className="link">
-                    <Link onClick={() => handleNavlinkToggle()} to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>Home</Link>
+                    <Link onClick={() => handleNavlinkToggle()} to="/home" className={location.pathname === "/" || location.pathname === "/home" ? "nav-link active" : "nav-link"}>Home</Link>
                 </li>
                 <li className="link">
                     <Link onClick={() => handleNavlinkToggle()} to="/work" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>Portfolio</Link>
