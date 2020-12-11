@@ -103,10 +103,31 @@ main {
   background-size: cover;
   background-attachment: fixed;
   padding-top: 8vh;
+  margin: 0;
 }
 
 main img {
   border: 3px solid black;
+}
+
+#main-container {
+  padding-bottom: 14vh !important;
+}
+
+.main-container {
+  padding: 10px;
+  background: rgba(50,50,50,0.6);
+}
+
+.about-title {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.about-text {
+  color: blanchedalmond;
+  opacity: 0.75;
+  padding: 10px
 }
 
 #title {
@@ -196,6 +217,7 @@ form {
 }
 
 footer {
+  height: 14vh;
   padding: 10px !important;
   width: 100%;
   background-color: rgba(50, 50, 50, 0.7) !important;
@@ -231,6 +253,7 @@ footer .container {
   }
 
   main {
+    height: 100%;
     margin: 0 !important;
     padding-bottom: 20px;
   }
@@ -245,7 +268,7 @@ footer .container {
     right: 0px;
     display: flex;
     flex-direction: column;
-    height: 92vh;
+    height: 78vh;
     align-items: center;
     width: 100%;
     top: 8vh;
