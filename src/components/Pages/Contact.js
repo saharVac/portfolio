@@ -3,14 +3,13 @@ import React from "react"
 function Contact() {
      
     return (
-        <main className="row">
+        <main className="contact-main row">
             <div className="container col-12">
                
-                    <div className="row col-10">
                         <h1>Contact Me</h1>
                         <form className="mt-4 pt-4" >
                             <div className="form-group">
-                                <label for="name">Full Name</label>
+                                <label htmlFor="name">Full Name</label>
                                 <input
                                 type="email"
                                 className="form-control"
@@ -18,7 +17,7 @@ function Contact() {
                                 />
                             </div>
                             <div className="form-group">
-                                <label for="email">Email address</label>
+                                <label htmlFor="email">Email address</label>
                                 <input
                                 type="email"
                                 className="form-control"
@@ -27,7 +26,7 @@ function Contact() {
                                 />
                             </div>
                             <div className="form-group">
-                                <label for="exampleFormControlTextarea1">Message</label>
+                                <label htmlFor="exampleFormControlTextarea1">Message</label>
                                 <textarea
                                 className="form-control"
                                 id="exampleFormControlTextarea1"
@@ -45,7 +44,7 @@ function Contact() {
                             </p> 
                         </section>
                         
-                    </div>
+                    
                     <div className="col-1"></div>
                 
             </div>

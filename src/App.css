@@ -96,6 +96,7 @@ nav {
 }
 
 main {
+  height: fit-content !important;
   background: url("./background-image.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -104,7 +105,6 @@ main {
   background-attachment: fixed;
   padding-top: 6vh;
   margin: 0;
-  height: 100%;
 }
 
 main img {
@@ -113,6 +113,22 @@ main img {
 
 #main-container {
   padding-bottom: 16vh !important;
+}
+
+.contact-main {
+  height: 100% !important;
+}
+
+.container h1 {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center !important;
+}
+
+#personal-info {
+  font-size: 20px;
+  background: rgba(148, 148, 148, 0.4);
+  text-align: center;
 }
 
 .main-container {
@@ -135,9 +151,13 @@ main img {
   color: #007fff;
 }
 
+.skills h4 {
+  text-align: center;
+}
+
 #portfolio {
   padding-bottom: 150px;
-  
+
 }
 
 #portfolio-container {
@@ -229,10 +249,11 @@ footer .container {
   margin: auto;
 }
 
-#footer-row {
+#footer-row,
+#footer-row i {
   margin: auto;
   font-size: 28px;
-  color: #007fff !important
+  color: #0668ca !important
 }
 
 #footer-title,
@@ -255,7 +276,6 @@ footer .container {
   }
 
   main {
-    height: 100%;
     margin: 0 !important;
     padding-bottom: 20px;
   }
