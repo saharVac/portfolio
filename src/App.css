@@ -104,6 +104,7 @@ main {
   background-attachment: fixed;
   padding-top: 6vh;
   margin: 0;
+  height: 100%;
 }
 
 main img {
@@ -136,6 +137,7 @@ main img {
 
 #portfolio {
   padding-bottom: 150px;
+  
 }
 
 #portfolio-container {

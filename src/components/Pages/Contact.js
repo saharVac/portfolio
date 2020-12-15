@@ -4,8 +4,8 @@ function Contact() {
      
     return (
         <main className="row">
-            <div className="container col-12 m-0 ml-4 mt-4">
-                <div className="row">
+            <div className="container col-12">
+               
                     <div className="row col-10">
                         <h1>Contact Me</h1>
                         <form className="mt-4 pt-4" >
@@ -47,7 +47,7 @@ function Contact() {
                         
                     </div>
                     <div className="col-1"></div>
-                </div>
+                
             </div>
         </main>
     )
