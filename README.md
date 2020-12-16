@@ -6,6 +6,11 @@
   ## Description
   A React portfolio app displaying my work and professional life
 
+  ## Languages
+  JavaScript, HTML, CSS
+
+  ## Deployed Link
+  https://saharvac.github.io/portfolio/
 
   ## Table of Contents
   - [Credits](#Credits)
