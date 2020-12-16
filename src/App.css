@@ -152,13 +152,18 @@ main img {
 }
 
 .about-text {
-  color: blanchedalmond;
+  color: rgb(245, 229, 205);
   opacity: 0.75;
   padding: 10px
 }
 
 #title {
   color: #007fff;
+}
+
+.skills {
+  width: 100%;
+  text-align: center;
 }
 
 .skills h4 {

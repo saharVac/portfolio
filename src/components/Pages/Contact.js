@@ -1,8 +1,20 @@
-import React from "react"
+import React, { useRef } from "react"
 
 function Contact() {
 
+    const nameRef = useRef()
+    const emailRef = useRef()
+    const messageRef = useRef()
+
     const sendMessage = () => {
+        const newMessage = {
+            to: "vcsahar@gmail.com",
+            subject: "PORTFOLIO CONTACT from: " + nameRef.current.value,
+            from: emailRef.current.value,
+            text: messageRef.current.value,
+            html: "<p>" + messageRef.current.value + "</p>"
+        }
+        console.log(newMessage)
         alert("Message Sent!")
     }
      
@@ -15,6 +27,7 @@ function Contact() {
                     <div className="form-group">
                         <label htmlFor="name">Full Name</label>
                         <input
+                        ref={nameRef}
                         type="email"
                         className="form-control"
                         id="name"
@@ -23,6 +36,7 @@ function Contact() {
                     <div className="form-group">
                         <label htmlFor="email">Email address</label>
                         <input
+                        ref={emailRef}
                         type="email"
                         className="form-control"
                         id="email"
@@ -32,6 +46,7 @@ function Contact() {
                     <div className="form-group">
                         <label htmlFor="exampleFormControlTextarea1">Message</label>
                         <textarea
+                        ref={messageRef}
                         className="form-control"
                         id="exampleFormControlTextarea1"
                         rows="3"

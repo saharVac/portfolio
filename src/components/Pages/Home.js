@@ -34,18 +34,18 @@ function homePage() {
                         <div className="skills">
                             <h4>Programming Languages</h4>
                             <p>
-                                HTML5, CSS3, JavaScript ES6+, SQL, NoSQL, Python (Udemy Certified).
+                                HTML5, CSS3, JavaScript ES6+, SQL, NoSQL, Python (Udemy Certified)
                             </p>
                             <p>
-                                &#160; &ndash; Familiarity with: Java, C, MATLAB.
+                                &#160; &ndash; Familiarity with: Java, C, MATLAB
                             </p>
                             <h4>Applications</h4>
                             <p>
-                                GitHub, MongoDB, MySQL.
+                                GitHub, MongoDB, MySQL
                             </p>
                             <h4>Tools</h4>
                             <p>
-                                React, Axios, Express, Node, Handlebars, Express, jQuery, Bootstrap, ORM.
+                                React, Axios, Express, Node, Handlebars, Express, jQuery, Bootstrap, ORM
                             </p>
                         </div>
                     </div>
