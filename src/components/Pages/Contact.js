@@ -20,7 +20,7 @@ function Contact() {
      
     return (
         <main className="contact-main row">
-            <div className="container col-12">
+            <div className="contact-container">
                
                 <h1>Contact Me</h1>
                 <form className="contact-form mt-4 pt-4" >
@@ -54,11 +54,12 @@ function Contact() {
                     </div>
                     <center>
                     <button 
-                    type="submit" 
-                    onClick={(e) => {
-                        e.preventDefault()
-                        sendMessage()
-                    }}>
+                        type="submit" 
+                        onClick={(e) => {
+                            e.preventDefault()
+                            sendMessage()
+                        }
+                    }>
                         Submit
                     </button>
                     </center>
