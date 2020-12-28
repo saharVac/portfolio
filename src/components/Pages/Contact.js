@@ -24,15 +24,6 @@ function Contact() {
                
                 <h1>Contact Me</h1>
 
-                <section id="personal-info">
-                    <p>
-                        <i className="fas fa-phone"></i> +1 (516) 713 4111
-                    </p>
-                    <p>
-                        <i className="fas fa-envelope-square"></i> vcsahar@gmail.com
-                    </p> 
-                </section>
-
                 <form className="contact-form mt-4 pt-4" >
                     <div className="form-group">
                         <label htmlFor="name">Full Name</label>
