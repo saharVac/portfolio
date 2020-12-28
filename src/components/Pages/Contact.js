@@ -10,16 +10,22 @@ function Contact() {
     const sendMail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_b67au6x', 'template_dgv034v', e.target, 'user_x9V1K4YqNlEX0TZAPB5BN')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            })
-            .catch(err => console.log)
+        // check if all fields are full
+        if (nameRef.current.value && emailRef.current.value && messageRef.current.value) {
+            emailjs.sendForm('service_b67au6x', 'template_dgv034v', e.target, 'user_x9V1K4YqNlEX0TZAPB5BN')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                })
+                .catch(err => console.log)
 
 
-        e.target.reset()
+            e.target.reset()
+            alert("MESSAGE SENT!")
+        } else {
+            alert("FILL OUT ALL FIELDS!")
+        }
     }
      
     return (
