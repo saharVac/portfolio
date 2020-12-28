@@ -7,15 +7,20 @@ function Contact() {
     const messageRef = useRef()
 
     const sendMessage = () => {
-        const newMessage = {
-            to: "vcsahar@gmail.com",
-            subject: "PORTFOLIO CONTACT from: " + nameRef.current.value,
-            from: emailRef.current.value,
-            text: messageRef.current.value,
-            html: "<p>" + messageRef.current.value + "</p>"
+        // check if all fields are filled
+        if (nameRef.current.value && emailRef.current.value && messageRef.current.value) {
+            const newMessage = {
+                to: "vcsahar@gmail.com",
+                subject: "PORTFOLIO CONTACT from: " + nameRef.current.value,
+                from: emailRef.current.value,
+                text: messageRef.current.value,
+                html: "<p>" + messageRef.current.value + "</p>"
+            }
+            console.log(newMessage)
+            alert("Message Sent!")
+        } else {
+            alert("Fill empty fields!")
         }
-        console.log(newMessage)
-        alert("Message Sent!")
     }
      
     return (
@@ -66,9 +71,6 @@ function Contact() {
                     </center>
 
                     <section id="personal-info">
-                    <p>
-                        <i className="fas fa-phone"></i> +1 (516) 713 4111
-                    </p>
                     <p>
                         <i className="fas fa-envelope-square"></i> vcsahar@gmail.com
                     </p> 

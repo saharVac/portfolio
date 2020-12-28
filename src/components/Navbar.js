@@ -26,7 +26,9 @@ function Navbar() {
     return (
         <nav>
             <div className="logo">
-                <h4>Sahar Vacnich</h4>
+                <Link onClick={() => handleNavlinkToggle()} to="/home" className="nav-link" style={{color: "white"}}>
+                    <h4>Sahar Vacnich</h4>
+                </Link>
             </div>
             <ul className={navLinkOpen ? "navlinks active" : "navlinks"}>
                 <li className="link">
