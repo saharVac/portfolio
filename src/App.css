@@ -37,7 +37,7 @@ a {
 header {
   min-height: 8vh;
   width: 100%;
-  position: absolute;
+  position: fixed !important;
   display: flex !important;
   align-items: center;
   position: fixed;
@@ -119,11 +119,7 @@ main img {
 }
 
 .contact-main {
-  padding-bottom: 14vh;
-}
-
-.contact-main {
-  height: 100% !important;
+  padding-bottom: 7vh;
 }
 
 .container h1 {
@@ -227,6 +223,10 @@ main img {
   color: antiquewhite;
 }
 
+#portfolio {
+  padding-bottom: 14vh;
+}
+
 #portfolio-container {
   padding: 0;
   width: 100%;
@@ -320,7 +320,7 @@ footer .container {
 #footer-row i {
   margin: auto;
   font-size: 28px;
-  color: #0668ca !important
+  color: antiquewhite !important
 }
 
 #footer-title,
@@ -416,8 +416,18 @@ footer .container {
 @media screen and (max-width: 540px) {
 
   .main-container {
-    width: 100% !important;
-    margin: 0;
+    width: 90% !important;
+    margin: auto;
+    padding: 10px;
+  } 
+
+  .about-intro {
+    margin: auto !important;
+    padding: 5px;
+  }
+
+  .about-text {
+    padding: 0 !important;
   }
 
 }
