@@ -393,7 +393,7 @@ footer .container {
   .navlinks {
     position: absolute;
     right: 0px;
-    display: flex;
+    display: none;
     flex-direction: column;
     height: 78vh;
     align-items: center;
