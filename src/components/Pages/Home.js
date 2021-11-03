@@ -23,7 +23,7 @@ function homePage() {
                             />
                         </div>
                         <p className="about-text">
-                            A dedicated, results-oriented web developer curious with conceptualizing ideas to translate into action. Graduated from Binghamton University’s Electrical Engineering program and currently finishing up Columbia University’s Full Stack Web Development Certification. Looking to leverage my passion for responsive web design, experience in collaborative team work, ability to maintain focus in a fast-paced environment, and possibly my written and oral fluency in Hebrew.
+                            A dedicated, results-oriented web developer curious with conceptualizing ideas to translate into action. Graduated from Binghamton University’s Electrical Engineering program and completed Columbia University’s Full Stack Web Development Certification. Looking to leverage my passion for responsive web design, experience in collaborative team work, ability to maintain focus in a fast-paced environment, and possibly my written and oral fluency in Hebrew.
                         </p>
                     </div>
                     
