@@ -407,6 +407,7 @@ footer .container {
   }
 
   .active {
+    display: flex;
     transform: translateX(0%);
   }
 

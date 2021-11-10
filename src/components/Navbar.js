@@ -2,6 +2,9 @@ import React, { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 import Resume from "../resources/Resume.pdf"
 
+// TODO: when navigating to new page, scroll back up
+// TODO: add current finances project
+
 function Navbar() {
 
     // prevent animation from happening on resizing
